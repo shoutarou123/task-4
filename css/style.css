@@ -92,6 +92,33 @@ header {
   transform: translateY(-7px) rotate(-45deg);
 }
 
+h2 {
+  text-align: center;
+}
+
+form label,
+form input,
+form select {
+  display: block;
+  margin: 0 auto;
+  width: 500px;
+}
+form input,
+form select {
+  padding: 10px 0;
+  border: solid 1px gray;
+  font-size: 16px;
+  box-sizing: border-box;
+  margin-bottom: 12px;
+
+}
+
+.required {
+  color: red;
+  font-size: 8px;
+  margin-left: 6px;
+}
+
 @media screen and (max-width: 670px) {
   .kv_content p {
     font-size: 40px;
