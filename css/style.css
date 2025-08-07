@@ -1,0 +1,135 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+header {
+  background-color: #1a48a6;
+  padding: 12px 0;
+  position: fixed;
+  width: 100%;
+}
+
+.header_content {
+  max-width: 800px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 8px;
+}
+
+.header_content ul {
+  display: flex;
+  justify-content: space-between;
+  width: 400px;
+}
+
+.header_content a {
+  color: #fff;
+}
+
+.header_content a:hover {
+  cursor: pointer;
+  opacity: 0.5;
+}
+
+.kv_content {
+  background-image: url("../img/kv.jpg");
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.kv_content p {
+  font-size: 60px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  word-break: keep-all;
+}
+
+/* ----- ハンバーガーメニュー ----- */
+.hamburger_content {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  gap: 4px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.hamburger_content span {
+  display: block;
+  background: #fff;
+  height: 2px;
+  width: 70%;
+  border-radius: 2px;
+  transition: all 0.3s ease-in;
+}
+
+.hamburger_content.open span:nth-child(1) {
+  transform: translateY(5px) rotate(45deg);
+}
+.hamburger_content.open span:nth-child(2) {
+  opacity: 0;
+}
+.hamburger_content.open span:nth-child(3) {
+  transform: translateY(-7px) rotate(-45deg);
+}
+
+@media screen and (max-width: 670px) {
+  .kv_content p {
+    font-size: 40px;
+  }
+  .hamburger_content {
+    display: flex;
+  }
+  .header_content {
+    position: relative;
+  }
+  #navMenu {
+    display: none;
+  }
+
+  #accordionMenu {
+    display: none;
+    position: fixed;
+    top: 60px;
+    width: 100%;
+    text-align: center;
+    background-color: #1a48a6;
+  }
+
+  #accordionMenu a {
+    color: #fff;
+    font-weight: bold;
+    padding: 12px 0;
+    display: block;
+    border-bottom: solid 1px #fff;
+  }
+
+  #accordionMenu:first-child {
+    border-top: solid 1px #fff;
+  }
+}
+
+@media screen and (max-width: 460px) {
+  .kv_content p {
+    font-size: 26px;
+  }
+}
