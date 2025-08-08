@@ -46,11 +46,11 @@
 
     <h2>お問い合わせ</h2>
     <form method="get" action="thanks.html">
-      <label for="name">お名前<span class="required">*必須</span></label>
+      <label for="name">お名前<span class="required_text">*必須</span></label>
       <input class="required_form" type="text" name="name" id="name" placeholder="例）田中 太郎" />
       <span class="required_message">この項目は必須です</span>
 
-      <label for="prefSelect">お住いの都道府県<span class="required">*必須</span></label>
+      <label for="prefSelect">お住いの都道府県<span class="required_text">*必須</span></label>
       <select class="required_form" name="prefectures" id="prefSelect">
         <option value="">選択してください</option>
         <option value="北海道">北海道</option>
@@ -59,13 +59,13 @@
       </select>
       <span class="required_message">この項目は必須です</span>
 
-      <label for="citySelect">お住まいの市区町村<span class="required">*必須</span></label>
+      <label for="citySelect">お住まいの市区町村<span class="required_text">*必須</span></label>
       <select class="required_form" name="city" id="citySelect">
         <option value="">選択してください</option>
       </select>
       <span class="required_message">この項目は必須です</span>
 
-      <label for="email">メールアドレス<span class="required">*必須</span></label>
+      <label for="email">メールアドレス<span class="required_text">*必須</span></label>
       <input class="required_form" type="email" id="email" placeholder="例）abcd123@example.com" />
       <span class="required_message">この項目は必須です</span>
 
@@ -76,5 +76,7 @@
 
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script src="./js/index.js"></script>
+    <script src="./js/form-validate.js"></script>
+    <script src="./js/pref-city.js"></script>
   </body>
 </html>

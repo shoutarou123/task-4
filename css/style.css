@@ -46,23 +46,6 @@ header {
   opacity: 0.5;
 }
 
-.kv_content {
-  background-image: url("../img/kv.jpg");
-  height: 100vh;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-}
-
-.kv_content p {
-  font-size: 60px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -webkit-transform: translate(-50%, -50%);
-  word-break: keep-all;
-}
 
 /* ----- ハンバーガーメニュー ----- */
 .hamburger_content {
@@ -96,6 +79,24 @@ header {
   transform: translateY(-7px) rotate(-45deg);
 }
 
+.kv_content {
+  background-image: url("../img/kv.jpg");
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.kv_content p {
+  font-size: 60px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  word-break: keep-all;
+}
+
 h2 {
   text-align: center;
 }
@@ -122,7 +123,7 @@ form select {
   box-sizing: border-box;
 }
 
-.required {
+.required_text {
   color: red;
   font-size: 8px;
   margin-left: 6px;
@@ -135,19 +136,6 @@ form select {
 }
 
 @media screen and (max-width: 670px) {
-  .kv_content p {
-    font-size: 40px;
-  }
-  .hamburger_content {
-    display: flex;
-  }
-  .header_content {
-    position: relative;
-  }
-  #navMenu {
-    display: none;
-  }
-
   #accordionMenu {
     display: none;
     position: fixed;
@@ -167,6 +155,31 @@ form select {
 
   #accordionMenu:first-child {
     border-top: solid 1px #fff;
+  }
+
+  .header_content {
+    position: relative;
+  }
+
+  #navMenu {
+    display: none;
+  }
+
+  .hamburger_content {
+    display: flex;
+  }
+
+  .kv_content p {
+    font-size: 40px;
+  }
+}
+
+@media screen and (max-width: 530px) {
+  form label,
+  form input,
+  form select,
+  .required_message {
+    width: 300px;
   }
 }
 
