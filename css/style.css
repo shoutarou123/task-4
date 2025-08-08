@@ -198,7 +198,13 @@ form select {
 
 .required_text {
   color: red;
-  font-size: 8px;
+  font-size: 10px;
+  margin-left: 6px;
+}
+
+.optional_text {
+  color: gray;
+  font-size: 10px;
   margin-left: 6px;
 }
 

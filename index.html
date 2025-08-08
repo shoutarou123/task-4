@@ -76,9 +76,9 @@
       <label for="prefSelect">お住いの都道府県<span class="required_text">*必須</span></label>
       <select class="required_form" name="prefectures" id="prefSelect">
         <option value="">選択してください</option>
-        <option value="北海道">北海道</option>
-        <option value="青森県">青森県</option>
-        <option value="岩手県">岩手県</option>
+        <option value="hokkaido">北海道</option>
+        <option value="aomori">青森県</option>
+        <option value="iwate">岩手県</option>
       </select>
       <span class="required_message">この項目は必須です</span>
 
@@ -92,8 +92,10 @@
       <input class="required_form" type="email" id="email" placeholder="例）abcd123@example.com" />
       <span class="required_message">この項目は必須です</span>
 
-      <label for="tel">電話番号</label>
+      <label for="tel">電話番号<span class="optional_text">*任意</span></label>
       <input type="tel" id="tel" placeholder="例）09012345678"/>
+      <span class="required_message">正しい電話番号を入力してください</span>
+
       <input class="submit" type="submit" />
     </form>
     </div>
