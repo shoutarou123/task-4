@@ -54,7 +54,6 @@ document.addEventListener("DOMContentLoaded", function() {
     岩手県: [
       { value: "盛岡市", label: "盛岡市" },
       { value: "宮古市", label: "宮古市" },
-      { value: "宮古市", label: "宮古市" },
       { value: "大船渡市", label: "大船渡市" },
       { value: "花巻市", label: "花巻市" },
       { value: "北上市", label: "北上市" },

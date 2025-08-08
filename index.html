@@ -16,12 +16,12 @@
         <a href="#" id="accordionServiceLink">サービス</a>
       </li>
       <li>
-        <a href="#" class="accordionContactLink">お問い合わせ</a>
+        <a href="#" id="accordionContactLink">お問い合わせ</a>
       </li>
     </ul>
     <header>
       <div class="header_content">
-        <a href="#">ダミーサイト</a>
+        <a href="/">ダミーサイト</a>
         <ul id="navMenu">
           <li>
             <a href="#" class="about_link">我が社について</a>
@@ -52,17 +52,17 @@
     <div class="service_content">
       <h2>サービス</h2>
       <div class="service_btn_content">
-        <p class="service_btn" id="webBtn">WEB制作</p>
+        <p class="service_btn active" id="webBtn">WEB制作</p>
         <p class="service_btn" id="seoBtn">SEOコンサル</p>
         <p class="service_btn" id="mobileBtn">スマホアプリ開発</p>
       </div>
-      <p class="service_detail">
-        WEB制作内容WEB制作内容WEB制作内容WEB制作内容WEB制作内容WEB制作内容WEB制作内容WEB制作内容WEB制作内容WEB制作内容WEB制作内容WEB制作内容WEB制作内容WEB制作内容WEB制作内容WEB制作内容WEB制作内容WEB制作内容WEB制作内容WEB制作内容WEB制作内容
+      <p class="service_detail" id="webDetail">
+        WEB制作内容WEB制作内容WEB制作内容WEB制作内容WEB制作内容WEB制作内容WEB制作内容WEB制作内容WEB制作内容WEB制作内容WEB制作内容WEB制作内容WEB制作内容WEB制作内容WEB制作内容WEB制作内容WEB制作内容WEB制作内容WEB制作内容WEB制作内容
       </p>
-      <p class="service_detail">
+      <p class="service_detail hidden" id="seoDetail">
         SEOコンサル内容SEOコンサル内容SEOコンサル内容SEOコンサル内容SEOコンサル内容SEOコンサル内容SEOコンサル内容SEOコンサル内容SEOコンサル内容SEOコンサル内容SEOコンサル内容SEOコンサル内容SEOコンサル内容SEOコンサル内容SEOコンサル内容
       </p>
-      <p class="service_detail">
+      <p class="service_detail hidden" id="mobileDetail">
         スマホアプリ開発内容スマホアプリ開発内容スマホアプリ開発内容スマホアプリ開発内容スマホアプリ開発内容スマホアプリ開発内容スマホアプリ開発内容スマホアプリ開発内容スマホアプリ開発内容スマホアプリ開発内容スマホアプリ開発内容スマホアプリ開発内容
       </p>
     </div>
@@ -100,8 +100,10 @@
     </div>
 
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-    <script src="./js/index.js"></script>
+    <script src="./js/AccordionMenu.js"></script>
     <script src="./js/form-validate.js"></script>
     <script src="./js/pref-city.js"></script>
+    <script src="./js/scroll.js"></script>
+    <script src="./js/serviceBtn.js"></script>
   </body>
 </html>

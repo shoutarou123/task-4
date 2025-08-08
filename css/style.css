@@ -46,7 +46,6 @@ header {
   opacity: 0.5;
 }
 
-
 /* ----- ハンバーガーメニュー ----- */
 .hamburger_content {
   display: none;
@@ -78,6 +77,7 @@ header {
 .hamburger_content.open span:nth-child(3) {
   transform: translateY(-7px) rotate(-45deg);
 }
+/* -------------------------------- */
 
 .kv_content {
   background-image: url("../img/kv.jpg");
@@ -115,13 +115,13 @@ h2 {
 }
 
 .underber_text {
-  background: linear-gradient(transparent 60%, #F39200 30%);
+  background: linear-gradient(transparent 60%, #f39200 30%);
   font-feature-settings: "palt";
 }
 
 .service_content {
   width: 700px;
-  margin:0 auto;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -148,17 +148,26 @@ h2 {
 
 #seoBtn.active,
 #seoBtn:hover {
-   background-color: #ffdea0;
+  background-color: #ffdea0;
 }
 
 #mobileBtn.active,
 #mobileBtn:hover {
-   background-color: #a7ff99;
+  background-color: #a7ff99;
 }
 
 .service_detail {
   border: solid 3px gray;
   padding: 0 8px;
+}
+
+.service_detail.hidden {
+  display: none;
+}
+
+/* ----- お問い合わせ ----- */
+.contact_content {
+  margin-bottom: 12px;
 }
 
 form label,
@@ -195,6 +204,7 @@ form select {
   font-size: 12px;
 }
 
+/* ----- サンクスページ ----- */
 .thanks_message {
   position: absolute;
   top: 50%;
@@ -205,21 +215,26 @@ form select {
   font-size: 30px;
 }
 
-@media screen and (max-width: 730px) {
+@media screen and (max-width: 460px) {
+  .kv_content p {
+    font-size: 26px;
+  }
+}
+
+@media screen and (max-width: 530px) {
   .about_content p {
-    font-size: 24px;
+    font-size: 16px;
   }
 
   .service_content {
-    width: 500px;
+    width: 300px;
   }
 
-  .service_btn_content {
-    width: 500px;
-  }
-  .service_btn {
-    width: 140px;
-    padding: 6px;
+  form label,
+  form input,
+  form select,
+  .required_message {
+    width: 300px;
   }
 }
 
@@ -262,7 +277,7 @@ form select {
   }
 
   .about_content p {
-  font-size: 20px;
+    font-size: 20px;
   }
 
   .service_content {
@@ -276,32 +291,25 @@ form select {
     width: 300px;
   }
 
-
   .thanks_message {
     font-size: 16px;
   }
 }
 
-@media screen and (max-width: 530px) {
-  .about_content p{
-    font-size: 16px;
+@media screen and (max-width: 730px) {
+  .about_content p {
+    font-size: 24px;
   }
 
   .service_content {
-    width: 300px;
+    width: 500px;
   }
 
-
-  form label,
-  form input,
-  form select,
-  .required_message {
-    width: 300px;
+  .service_btn_content {
+    width: 500px;
   }
-}
-
-@media screen and (max-width: 460px) {
-  .kv_content p {
-    font-size: 26px;
+  .service_btn {
+    width: 140px;
+    padding: 6px;
   }
 }
