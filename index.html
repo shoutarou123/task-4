@@ -10,13 +10,13 @@
   <body>
     <ul id="accordionMenu">
       <li>
-        <a href="#">我が社について</a>
+        <a href="#" id="accordionAboutLink">我が社について</a>
       </li>
       <li>
-        <a href="#">サービス</a>
+        <a href="#" id="accordionServiceLink">サービス</a>
       </li>
       <li>
-        <a href="#">お問い合わせ</a>
+        <a href="#" class="accordionContactLink">お問い合わせ</a>
       </li>
     </ul>
     <header>
@@ -24,13 +24,13 @@
         <a href="#">ダミーサイト</a>
         <ul id="navMenu">
           <li>
-            <a href="#">我が社について</a>
+            <a href="#" class="about_link">我が社について</a>
           </li>
           <li>
-            <a href="#">サービス</a>
+            <a href="#" class="service_link">サービス</a>
           </li>
           <li>
-            <a href="#">お問い合わせ</a>
+            <a href="#" class="contact_link">お問い合わせ</a>
           </li>
         </ul>
         <button class="hamburger_content" id="hamburgerBtn" aria-label="メニューを開く">
@@ -44,6 +44,30 @@
       <p>ダミーサイトへようこそ</p>
     </div>
 
+    <div class="about_content">
+      <h2>我が社について</h2>
+      <p>TechEliteは、顧客に自身をもって<span class="underber_text">「納品」</span>が</p>
+      <p>できるレベルのLPが作れるようになります。</p>
+    </div>
+    <div class="service_content">
+      <h2>サービス</h2>
+      <div class="service_btn_content">
+        <p class="service_btn" id="webBtn">WEB制作</p>
+        <p class="service_btn" id="seoBtn">SEOコンサル</p>
+        <p class="service_btn" id="mobileBtn">スマホアプリ開発</p>
+      </div>
+      <p class="service_detail">
+        WEB制作内容WEB制作内容WEB制作内容WEB制作内容WEB制作内容WEB制作内容WEB制作内容WEB制作内容WEB制作内容WEB制作内容WEB制作内容WEB制作内容WEB制作内容WEB制作内容WEB制作内容WEB制作内容WEB制作内容WEB制作内容WEB制作内容WEB制作内容WEB制作内容
+      </p>
+      <p class="service_detail">
+        SEOコンサル内容SEOコンサル内容SEOコンサル内容SEOコンサル内容SEOコンサル内容SEOコンサル内容SEOコンサル内容SEOコンサル内容SEOコンサル内容SEOコンサル内容SEOコンサル内容SEOコンサル内容SEOコンサル内容SEOコンサル内容SEOコンサル内容
+      </p>
+      <p class="service_detail">
+        スマホアプリ開発内容スマホアプリ開発内容スマホアプリ開発内容スマホアプリ開発内容スマホアプリ開発内容スマホアプリ開発内容スマホアプリ開発内容スマホアプリ開発内容スマホアプリ開発内容スマホアプリ開発内容スマホアプリ開発内容スマホアプリ開発内容
+      </p>
+    </div>
+
+    <div class="contact_content">
     <h2>お問い合わせ</h2>
     <form method="get" action="thanks.html">
       <label for="name">お名前<span class="required_text">*必須</span></label>
@@ -73,6 +97,7 @@
       <input type="tel" id="tel" placeholder="例）09012345678"/>
       <input class="submit" type="submit" />
     </form>
+    </div>
 
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script src="./js/index.js"></script>
