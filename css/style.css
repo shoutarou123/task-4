@@ -103,9 +103,13 @@ h2 {
 }
 
 .about_content h2,
-.contact_content h2,
-.about_content p {
+.contact_content h2 {
   text-align: center;
+}
+
+.about_content {
+  width: 610px;
+  margin: 0 auto;
 }
 
 .about_content p {
@@ -215,26 +219,21 @@ form select {
   font-size: 30px;
 }
 
-@media screen and (max-width: 460px) {
-  .kv_content p {
-    font-size: 26px;
-  }
-}
-
-@media screen and (max-width: 530px) {
-  .about_content p {
-    font-size: 16px;
+@media screen and (max-width: 730px) {
+  .about_content {
+    width: 500px;
   }
 
   .service_content {
-    width: 300px;
+    width: 500px;
   }
 
-  form label,
-  form input,
-  form select,
-  .required_message {
-    width: 300px;
+  .service_btn_content {
+    width: 500px;
+  }
+  .service_btn {
+    width: 140px;
+    padding: 6px;
   }
 }
 
@@ -276,8 +275,8 @@ form select {
     font-size: 40px;
   }
 
-  .about_content p {
-    font-size: 20px;
+  .about_content {
+    width: 500px;
   }
 
   .service_content {
@@ -296,20 +295,25 @@ form select {
   }
 }
 
-@media screen and (max-width: 730px) {
-  .about_content p {
-    font-size: 24px;
+@media screen and (max-width: 530px) {
+  .about_content {
+    width: 300px;
   }
 
   .service_content {
-    width: 500px;
+    width: 300px;
   }
 
-  .service_btn_content {
-    width: 500px;
+  form label,
+  form input,
+  form select,
+  .required_message {
+    width: 300px;
   }
-  .service_btn {
-    width: 140px;
-    padding: 6px;
+}
+
+@media screen and (max-width: 460px) {
+  .kv_content p {
+    font-size: 26px;
   }
 }
