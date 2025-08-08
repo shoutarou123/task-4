@@ -18,6 +18,11 @@ $(function () {
     }
   });
 
+  $("#accordionMenu a").on("click", function () {
+    $("#accordionMenu").slideUp(300);
+    $("#hamburgerBtn").removeClass("open");
+  });
+
   const btns = [
     document.getElementById("webBtn"),
     document.getElementById("seoBtn"),
