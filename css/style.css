@@ -135,6 +135,18 @@ form select {
   font-size: 12px;
 }
 
+.thanks_message {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  word-break: keep-all;
+  font-size: 30px;
+}
+
+
+
 @media screen and (max-width: 670px) {
   #accordionMenu {
     display: none;
@@ -171,6 +183,10 @@ form select {
 
   .kv_content p {
     font-size: 40px;
+  }
+
+  .thanks_message {
+    font-size: 16px;
   }
 }
 
